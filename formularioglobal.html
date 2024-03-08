@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+
+<div>
+            <label for="incidencia">Número incidenia:</label>
+            <input type="text" valid="incidencia" value="Q1157" readonly required> 
+            <label>Fecha y hora de recepción:</label>
+            <input type="datetime-local">
+        </div><br>
+<h2>Información del usuario:</h2>
+
+<form>
+
+<label for="name">Nombre del cliente:</label> <input type="text" id="name" name="name" pattern="^[A-Za-z]+$" autocomplete="off" minlength="5" maxlength="50" required> <nbsp></nbsp> <label for="Identificación">Identificación</label> <input type="text" id="Identificación" name="Identificación" pattern="^[0-9]+$" title="Por favor, ingresa solo numeros" autocomplete="off" required> <br> <p></p> <label for="Tipo de identificación">Tipo de identificación:</label>
+  <select name="Tipo de identificación" id="Tipo de identificación" required>
+    <option value="" disabled selected hidden>Seleccione</option>  
+    <option value="1">Cedula de Ciudadania</option>
+    <option value="2">Tarjeta de identidad</option>
+    <option value="3">Pasaporte</option>
+  </select>
+    </nbsp>
+<label for="Tipo de solicitante">Tipo de solicitante</label>
+ <select name="Tipo de solicitante" id="Tipo de solicitante" required>
+    <option value="" disabled selected hidden>Selecciona</option>  
+    <option value="1">03-Docente</option>
+    <option value="2">04-Docente</option>
+    <option value="3">05-Docente</option>
+  </select><br>
+  <br>
+  <label for="email">Email: </label><input type="email" id="email" name="email" autocomplete="off" minlength="5" maxlength="50" required>
+  <br>
+  <br>
+
+    
+<h2>Información de contacto: </h2>
+  <br>
+  <br>
+
+<label for="País">País:  </label>
+  <select name="País" id="País" required>
+    <option value="" disabled selected hidden>Seleciona tu país</option>  
+    <option value="1">Colombia</option>
+    <option value="2">Venezuela</option>
+    <option value="3">Ecuador</option>
+  </select>
+ <nbsp>
+  <label for="Departamento">Departamento:  </label>
+  <select name="Departamento" id="Departamento" required>
+    <option value="" disabled selected hidden>Seleciona tu departamento</option>  
+    <option value="1">Amazonas</option>
+    <option value="2">Guaranda</option>
+    <option value="3">Caracas</option>
+  </select>
+ </nbsp>
+ <br>
+ <br>
+  <label for="Ciudad">Ciudad:  </label>
+  <select name="Ciudad" id="Ciudad" required>
+    <option value="" disabled selected hidden>Seleciona tu ciudad</option>  
+    <option value="1">Bogotá</option>
+    <option value="2">Quito</option>
+    <option value="3">Caracas</option>
+  </select>
+  <br>
+  <br>
+  <label for="Teléfono">Teléfono:</label>
+  <input type="number" id="Teléfono" name="Teléfono" pattern="^[0-9]+$" minlength="5" maxlength="10" title="Por favor, ingresa solo numeros" autocomplete="off" required> <nbsp>
+    <label for="Celular">Celular:</label>
+  <input type="number" id="Celular" name="Celular" pattern="^[0-9]+$" minlength="5" maxlength="10" title="Por favor, ingresa solo numeros" autocomplete="off" required>
+  </nbsp>
+  <br>
+  <br>
+  <label for="Medio de contacto preferido">Medio de contacto preferido:  </label>
+  <select name="Medio de contacto preferido" id="Medio de contacto preferido" required>
+    <option value="" disabled selected hidden>Seleciona</option>  
+    <option value="1">Redes sociales</option>
+    <option value="2">Blog</option>
+    <option value="3">Correo escrito</option>
+  </select>
+  <nbsp>
+<label for="Dirección">Dirección:</label>
+  <input type="text" id="Dirección" name="Dirección" pattern="^[A-Za-z]+$" minlength="5" maxlength="100" autocomplete="off" required>
+  </nbsp>
+  <br>
+  <br>
+
+  <h2>Información de solicitud</h2>
+<br>
+
+<label for="Fecha de vencimiento">Fecha de vencimiento:</label>
+<input type="date" id="Fecha de vencimiento" name="Fecha de vencimiento" required>
+<br>
+<br>
+<label for="Asunto">Asunto:</label>
+  <select name="Asunto" id="Asunto" required>
+    <option value="" disabled selected hidden>Seleciona un asunto</option>  
+    <option value="1">Queja</option>
+    <option value="2">Reclamo</option>
+    <option value="3">Informe</option>
+  </select>
+<br>
+<br>
+  <label for="Descripcion">Descripcion:</label> <input type="text" id="Descripcion" name="Descripcion" pattern="^[A-Za-z]+$" minlength="5" maxlength="100" autocomplete="off" style="width: 300px; height: 100px;" required>
+  <br>
+  <br>
+  <label for="images">Adjunto:</label>
+  <input type="file" id="Adjunto" name="Adjunto" accept=".png, .jpg" multiple required>
+
+  <br>
+  <br>
+  <input type="submit" value="Send">
+
+
+</body>
+</html>
