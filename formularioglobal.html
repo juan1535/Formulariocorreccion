@@ -17,7 +17,7 @@
 
 <form>
 
-<label for="name">Nombre del cliente:</label> <input type="text" id="name" name="name" pattern="^[A-Za-z]+$" autocomplete="off" minlength="5" maxlength="50" required> <nbsp></nbsp> <label for="Identificación">Identificación</label> <input type="text" id="Identificación" name="Identificación" pattern="^[0-9]+$" title="Por favor, ingresa solo numeros" autocomplete="off" required> <br> <p></p> <label for="Tipo de identificación">Tipo de identificación:</label>
+<label for="name">Nombre del cliente:</label> <input type="text" id="name" name="name" pattern="[A-Z a-z]+" autocomplete="off" minlength="5" maxlength="50" required> <nbsp></nbsp> <label for="Identificación">Identificación</label> <input type="text" id="Identificación" name="Identificación" pattern="^[0-9]+$" title="Por favor, ingresa solo numeros" autocomplete="off" required> <br> <p></p> <label for="Tipo de identificación">Tipo de identificación:</label>
   <select name="Tipo de identificación" id="Tipo de identificación" required>
     <option value="" disabled selected hidden>Seleccione</option>  
     <option value="1">Cedula de Ciudadania</option>
@@ -85,7 +85,7 @@
   </select>
   <nbsp>
 <label for="Dirección">Dirección:</label>
-  <input type="text" id="Dirección" name="Dirección" pattern="^[A-Za-z]+$" minlength="5" maxlength="100" autocomplete="off" required>
+  <input type="text" id="Dirección" name="Dirección" pattern="[A-Z a-z]+" minlength="5" maxlength="100" autocomplete="off" required>
   </nbsp>
   <br>
   <br>
@@ -106,7 +106,7 @@
   </select>
 <br>
 <br>
-  <label for="Descripcion">Descripcion:</label> <input type="text" id="Descripcion" name="Descripcion" pattern="^[A-Za-z]+$" minlength="5" maxlength="100" autocomplete="off" style="width: 300px; height: 100px;" required>
+  <label for="Descripcion">Descripcion:</label> <input type="text" id="Descripcion" name="Descripcion" pattern="[A-Z a-z]+" minlength="5" maxlength="100" autocomplete="off" style="width: 300px; height: 100px;" required>
   <br>
   <br>
   <label for="images">Adjunto:</label>
